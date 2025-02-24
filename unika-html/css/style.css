@@ -1,0 +1,1484 @@
+/*---------------------------------------------------------------------------------
+
+Master Stylesheet
+
+	Template:	 Unika - Responsive One Page HTML5 Template
+	Author:		 imransdesign.com
+	URL:		 http://imransdesign.com/
+    Designed By: https://www.behance.net/poljakova
+	Version:	1.0	
+
+---------------------------------------------------------------------------------*/
+
+html {
+	height: 100% !important;
+}
+body {
+	position: relative;
+	height: 100%;
+	font-size: 14px;
+	color: #1F9AA1;
+}
+body .body {
+	height: 100%;
+}
+.cover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	background-color: #ffffff(0, 46, 82, 0.15);
+	padding: 20px;
+}
+.page {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+* {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+}
+*:focus { 
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+/* Begin Fonts */
+body {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
+h1 {
+	font-size: 36px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 22px;
+}
+h5 {
+	font-size: 18px;
+}
+p {
+	font: 14px/1.5em "Roboto";
+}
+.navbar-nav > li > a {
+	font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+/* End Fonts */
+
+
+section {
+	position: relative;
+}
+.page-loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background: #FFF url(../img/magic-7834_25.gif) center center no-repeat;
+	background-size: 100px 100px;
+}
+.devider {
+	width: 100%;
+	height: 150px;
+	background: url('../img/frame2.png') no-repeat center center;
+	background-size: contain;
+	margin: -50px 0 -50px;
+
+}
+.thumbnail {
+	padding: 15px;
+	margin-bottom: 5px;
+	background-color: #FFF;
+	border: 1px solid #DDD;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.form-control {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.parallax {
+	position: relative;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  	background-size: cover;
+}
+
+#header {
+	/* height: 98px; */
+}
+
+
+/* ===== Begin text colors ===== */
+.text-main { color: #ffffff; } /* Theme main color */
+.text-white { color: #FFF; }
+.text-off-white { color: #e7e7e7;}
+.text-dark { color: #ffffff; }
+
+
+/* ===== Begin navbar ===== */
+.navbar {
+	margin: 0;
+	border: none;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navbar .container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+/* Navbar brand (logo) */
+.navbar-brand {
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 150px;
+	min-width: 150px;
+	min-height: auto;
+	margin-top: 5px;
+	padding: 25px 0;
+	text-indent: -99999px;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 20px;
+	letter-spacing: 4px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navbar-default .navbar-brand {
+	background-image: url(../img/2.png);
+}
+
+/* Navbar links */
+.navbar-nav > li > a {
+	padding: 24px 0;
+	margin-left: 25px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+/* Navbar dropdown */
+.dropdown-left {
+	left: 0 !important;
+	right: auto !important;
+}
+.dropdown-right {
+	right: 0 !important;
+	left: auto !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	background-color: transparent;
+}
+.navbar-default .dropdown-menu {
+	padding: 10px 0;
+}
+.dropdown-menu > li > a {
+	padding: 4px 20px;
+	text-transform: uppercase;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a.active, .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/* Navbar inverse dropdown */
+.navbar-inverse .dropdown-menu {
+	padding: 10px 0;
+}
+
+/* Navbar fixed */
+.navbar-fixed-top .container {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navbar-shrink {
+	z-index: 9999;
+	-webkit-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12);
+	-moz-box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12);
+	box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12);
+}
+.navbar-shrink .navbar-brand {
+	font-size: 20px;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .container {
+}
+.navbar-fixed-top.navbar-shrink .container {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+.navbar-default.navbar-fixed-top.navbar-shrink .navbar-nav > li > a {
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/* Navbar transparent */
+.navbar-transparent {
+	background-color:#ffffff(0, 0, 0, 0);
+}
+.navbar-fixed-top.navbar-transparent .container {
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+.navbar-fixed-bottom.navbar-transparent .container {
+	padding-top: 0;
+	padding-bottom: 30px;
+}
+.navbar-transparent .navbar-nav > li > a {
+	color: #FFF;
+}
+.navbar-transparent .navbar-brand, .navbar-transparent .navbar-brand:focus {
+	color: #FFF;
+}
+/* ===== End navbar ===== */
+
+
+/* ===== Begin intro ===== */
+/* Begin text carousel intro */
+#text-carousel-intro-section {
+	position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#text-carousel-intro-section .container {
+	position: absolute; 
+    bottom: 0; 
+    left: 0;
+    width: 80%; 
+    padding: 20px;
+    z-index: 1; 
+}
+
+#text-carousel-intro-section .caption {
+	margin-top: 0 
+}
+
+#text-carousel-intro-section .caption h1 {
+	margin-top: 0 0 10px;
+	font-size: 60px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+#text-carousel-intro-section .caption p {
+	margin:0;
+	letter-spacing: 2px;
+	font-size: 16px;
+}
+
+.bottom-left-text h1{
+    position: absolute;
+    bottom: 30px; /* 调整距离底部的距离 */
+    left: 40px; /* 调整距离左侧的距离 */
+    font-size: 5vw !important; /* 文字大小 */
+    color: white; /* 文字颜色 */
+    font-weight: bold; /* 加粗 */
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* 添加阴影提高可读性 */
+    z-index: 10; /* 确保文字不会被其他元素遮挡 */
+	white-space: nowrap; /* 防止换行 */
+}
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid white; /* 模拟打字机光标 */
+    width: 0; /* 初始宽度为 0 */
+    animation: typing 3s steps(30, end) forwards, blink 1.5s infinite;
+}
+
+/* 打字机效果 */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* 闪烁光标 */
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}
+
+/* End text carousel intro */
+/* ===== End intro ===== */
+
+
+/* ===== Begin roatet boxes ===== */
+/* Begin rotate box-1 */
+.image-container {
+    flex: 0 1 50%; /* 修改flex属性 */
+    margin-right: 2%; /* 改用百分比单位 */
+    max-width: 600px; /* 添加最大宽度限制 */
+    position: relative;
+}
+
+.image-container img {
+    width: 70%; /* 调整图片显示比例 */
+    max-width: 500px; /* 添加最大宽度 */
+    margin: 0 auto; /* 居中显示 */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* 宽屏适配 */
+@media (min-width: 1200px) {
+    .image-container {
+        margin-right: 5%; /* 减小宽屏间距 */
+        flex-basis: 45%;
+    }
+    
+    .image-container img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1600px) {
+    .image-container {
+        margin-right: 3%;
+        flex-basis: 40%;
+    }
+    
+    .image-container img {
+        width: 65%;
+        max-width: 450px;
+    }
+}
+
+.text-container {
+    width: 100%; /* 确保容器宽度填充父级 */
+    max-width: 100%; /* 防止溢出 */
+    word-wrap: break-word; /* 允许长单词换行 */
+    overflow-wrap: break-word; /* 现代浏览器支持 */
+    hyphens: auto; /* 英文自动连字符(可选) */
+    box-sizing: border-box; /* 包含padding在宽度内 */
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: justify; /* 两端对齐 */
+}
+
+/* 文字排版优化 */
+.text-container h4 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px) { /* 手机设备 */
+    .text-container {
+        padding: 0 15px; /* 增加左右间距 */
+    }
+    
+    .text-container h4 {
+        font-size: 1.4rem;
+    }
+    
+    .text-container p {
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;  /* 初始透明度为0（完全透明） */
+        transform: translateY(20px);  /* 可选：从下方20px位置向上移动 */
+    }
+    to {
+        opacity: 1;  /* 最终透明度为1（完全不透明） */
+        transform: translateY(0);
+    }
+}
+
+.image-container img {
+    animation: fadeIn 1.5s ease-in-out forwards;  /* 持续1.5秒，缓动效果 */
+}
+.text-container {
+    animation: fadeIn 1.5s ease-in-out forwards;  /* 持续1.5秒，缓动效果 */
+}
+
+
+	
+.rotate-box-1, .rotate-box-2 {
+	display: inline-block;
+	margin: 100px 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+a.rotate-box-1, a.rotate-box-2 {
+	text-decoration: none;
+	color: #f4f5f7;
+}
+a.rotate-box-1:hover, a.rotate-box-2:hover {
+	color: #ececec;
+}
+.rotate-box-1 .rotate-box-icon {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-right: 25px;
+	margin-top: 10px;
+	float:left;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #FFF !important;
+	font-size: 18px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(0deg);
+}
+.rotate-box-1.square-icon .rotate-box-icon:after, .rotate-box-2.square-icon .rotate-box-icon:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	left: 3px;
+	border: 2px solid #FFF;
+}
+.rotate-box-1:hover.square-icon .rotate-box-icon , .rotate-box-2:hover.square-icon .rotate-box-icon{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(45deg);
+}
+.rotate-box-1.square-icon .rotate-box-icon .fa, .rotate-box-2.square-icon .rotate-box-icon .fa{
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.rotate-box-1:hover.square-icon .rotate-box-icon .fa, .rotate-box-2:hover.square-icon .rotate-box-icon .fa{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.rotate-box-1 .rotate-box-info a, .rotate-box-2 .rotate-box-info a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.rotate-box-1 h4, .rotate-box-2 h4 {
+	font-weight: 400;
+}
+.rotate-box-1 p {
+	padding: 0 10px;
+}
+.rotate-box-1 .rotate-box-info {
+	padding-left: 60px;
+}
+
+.social-list {
+    list-style: none; /* 去掉默认的列表符号 */
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 水平居中对齐列表项 */
+    gap: 20px; /* 增加列表项之间的间距 */
+    padding: 0;
+    margin: 0;
+}
+
+/* 每个图标的样式 */
+.social-list li {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0; /* 不让元素扩展 */
+    flex-shrink: 0; /* 不让元素缩小 */
+    flex-basis: auto; /* 根据内容大小自动调整 */
+	margin: 0 45px; /* 为每个图标设置左右外边距 */
+}
+
+/* End rotate box-1 */
+
+
+/* Begin rotate box-2 */
+
+.rotate-box-2 .rotate-box-icon {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.rotate-box-2.square-icon .rotate-box-icon {
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	font-size: 36px;
+}
+
+.rotate-box-2.square-icon .rotate-box-info {
+	margin-top: 30px;
+}
+/* End rotate box-2 */
+/* ===== End rotate boxes ===== */
+
+
+/* ===== Begin progress bar ===== */
+.skill-bar {
+}
+.progress {
+	overflow: visible;
+	height: 25px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.progress .percent {
+	position: relative;
+	background-color: #222;
+	padding: 7px;
+	color: #FFF;
+	top: -23px;
+}
+.progress .percent:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	margin-left: -4px;
+	bottom: -4px;
+	width: 0;
+	height: 0;
+	border-left: 4px solid rgba(0, 0, 0, 0);
+	border-right: 4px solid rgba(0, 0, 0, 0);
+	border-top: 4px solid #222;
+}
+.progress-bar {
+	font-size: 10px;
+	line-height: 7px;
+	text-align: right;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.progress-lebel h6{
+	margin-bottom: 10px;
+	letter-spacing: 2px;
+}
+/* ===== End progress bar ===== */
+
+
+/* Begin cta section */
+#cta-section {
+	padding: 5px 0 10px;
+	margin-bottom: 0px;
+}
+.cta-btn {
+	margin-top: 0px;
+}
+/* End cta section */
+
+.section-divider {
+    position: relative;
+    height: 20px;
+    margin: 0px 0;
+}
+
+.section-divider::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;               /* 长度 */
+    height: 4px;              /* 粗细 */
+    border-radius: 50px;      /* 弧度（示例值为50px） */
+	background:#1F9AA1;
+}
+/* ===== Begin testimonial ===== */
+
+/* 修改后的安全版本 */
+.thumbnail-container { /* 修改类名 */
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0 8px 0;
+    min-height: 250px;
+}
+
+/* 增加作用域限制 */
+.rotate-box-2-wrapper .thumbnail-overlay { /* 同步修改 */
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+}
+
+.rotate-box-2-wrapper .thumbnail-container:hover .thumbnail-overlay { /* 同步修改 */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 修复比例占位符 */
+.thumbnail-container::after { /* 同步修改 */
+    content: '';
+    display: block;
+    padding-top: 75%;
+	position: absolute; /* 添加定位避免影响文档流 */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.thumbnail-overlay {
+    padding: 30px; /* 统一内边距 */
+    /* 或分方向设置 */
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.thumbnail-overlay h3 {
+	margin-bottom: 10px; /* 调整这个值控制间距 */
+}
+
+/* 确保添加以下样式 */
+.character-link {
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.custom-link {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #20adb4;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 2px solid #1F9AA1;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+    background: #1f9aa19f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+/* ===== End testimonial ===== */
+
+#services-section,
+#portfolio-section {
+  margin-bottom: 0 !important; /* 清除默认底部margin */
+  padding-bottom: 0 !important; /* 按需清除内边距 */
+}
+
+/* ===== Begin Portfolio===== */
+
+.page-header-wrapper {
+    margin-top: 0; /* 去掉 .page-header-wrapper 上方的空隙 */
+    padding-top: 0; /* 去除容器顶部的内边距 */
+}
+
+.page-header {
+    margin-top: 0; /* 去除 .page-header 上方的外边距 */
+    padding-top: 0; /* 去除 .page-header 上方的内边距 */
+}
+
+/* 直接调整 h2 元素的间距 */
+.page-header h2 {
+    margin-top: 0; /* 去掉标题上方的外边距 */
+    padding-top: 0; /* 去掉标题的顶部内边距 */
+}
+
+.flashing-text {
+    /* 基础布局 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    /* 响应式字体 */
+    font-size: clamp(1.2rem, 3vw + 0.5rem, 2rem);
+    line-height: 1;
+    
+    /* 容器设置 */
+    width: 90%;
+    max-width: 1200px;
+    margin: auto auto;
+    padding: 0px 0px;
+    
+    /* 文字处理 */
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    
+    /* 动画效果 */
+    animation: pulse 2s infinite;
+}
+
+/* 地图容器样式 */
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.map-background {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 小人样式 */
+.moving-character {
+    position: absolute;
+	top: 52%;
+	left: 34%;
+	transform: translate(-52%, -34%);
+    width: 11vw;
+    cursor: pointer;
+    transition: transform 0.3s;
+    z-index: 10;
+
+	animation: bounce 0.7s ease infinite;
+}
+
+.character {
+    width: 100%;
+	height: auto;
+    filter: drop-shadow(10px 10px 6px rgba(0,0,0,0.3));
+}
+
+/* 悬停动画 */
+.moving-character:hover {
+    transform: scale(1.2);
+    animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.flashing-text {
+    position: absolute;
+    top: 80%;   /* 设置文字的初始位置，可以根据需要调整 */
+    left: 50%;
+    transform: translateX(-50%);  /* 水平居中 */
+    font-size: 24px;  /* 设置文字大小 */
+    color: #05AAAE;   /* 设置文字颜色*/
+    animation: flash 1.8s infinite;  /* 让文字进行闪烁动画 */
+}
+
+/* 闪烁动画 */
+@keyframes flash {
+    0% { opacity: 1; }      /* 100% 不透明 */
+    50% { opacity: 0; }     /* 50% 透明 */
+    100% { opacity: 1; }    /* 100% 不透明 */
+}
+
+/* ===== End Portfolio===== */
+
+
+
+/* ===== Begin team ===== */
+
+/* 确保不同比例图片完美填充 */
+.photo-frame img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* 关键属性 */
+	object-position: center; /* 焦点区域调整 */
+  }
+  
+  /* 特定图片的焦点定位 */
+  .photo-frame.portrait img {
+	object-position: top center; /* 人像图片聚焦头部 */
+  }
+  
+  /* 添加悬停缩放效果 */
+  .photo-frame:hover img {
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+  }
+
+  /* 新增文字样式 */
+.image-caption {
+	text-align: center;  /* 文字居中 */
+	color:#05AAAE;       
+	font-size: 24px; /* 字号 */
+	margin-top: 10px;   /* 与图片间距 */
+	line-height: 2;
+	padding: 0 20px;    /* 防止文字贴边 */
+  }
+  
+  
+
+
+/* 相框样式 */
+.photo-frame {
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    margin: 15px;
+    transform: translateY(0);
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+/* 悬停动画 */
+.photo-frame:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+/* 自定义入场动画 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wow.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+/* 响应式调整 */
+@media (max-width: 767px) {
+    .photo-frame {
+        margin: 15px 0;
+    }
+}
+
+
+
+.team-item {
+	height: 120px;
+}	
+.team-item .team-triangle {
+	width: 120px;
+	height: 120px;
+	background: transparent;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	margin: 0 auto;
+	position: relative;
+	top: 25px;
+	box-shadow: 0 0 0 6px #FFFFFF, 0 0 0 7px #dadbdb;
+	overflow: hidden;
+}
+.team-item img {
+    max-width: 100%;
+}
+.team-items {
+	margin-bottom: 50px;
+	padding-top: 0px;
+	margin-top: 0;
+}
+.team-triangle .content {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: -35px;
+	position: absolute;
+	left: -37px;
+	width: 190px;
+	height: 190px;
+}
+.team-hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba( 103, 109, 117, 0.9);
+	opacity: 0;
+	-webkit-transition: opacity 0.4s ease-in; /* For Safari 3.1 to 6.0 */
+    transition: opacity 0.4s ease-in;
+}
+.team-item .team-triangle:hover .team-hover {
+	opacity: 1;
+}
+.team-hover i {
+    color: rgba(255, 255, 255,.75);
+    font-size: 28px;
+    margin-top: 57px;
+    position: relative;
+}
+.team-hover p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+}
+.team-items .col-md-2:nth-child(7n+5) {
+	clear: left;
+	margin-left: 24.9999999%;
+}
+.team-items .col-md-2:nth-child(7n+1) {
+	clear: left;
+	margin-left: 16.6666666%;
+}
+/* ===== End team ===== */
+
+
+/* ===== Begin partners ===== */
+#partners-section {
+	padding: 80px 0;
+}
+.partners {
+	background-color: #252320;
+}
+
+.partners img {
+	max-width: 100%;
+	padding: 0 15px;
+}
+/* ===== End partners ===== */
+
+
+/* ===== Begin panels ===== */
+.panel, .panel-heading, .panel-footer  {
+}
+/* ===== End panels ===== */
+
+/* ===== Begin prices ===== */
+.prices .panel {
+	position: relative;
+	overflow: hidden;
+	border: none;
+}
+.prices .panel-body .lead {
+	margin: 0;
+	font-size: 48px;
+}
+.prices .panel-footer {
+	padding: 25px 15px;
+}
+
+/* panel-default */
+.prices .panel-default .panel-heading {
+	padding-top: 25px;
+	border: none;
+}
+.prices .panel-default .panel-body {
+	background-color: #EEE;
+}
+.prices .panel-default .list-group-item {
+	color: #222;
+	border: none;
+}
+.prices .panel-default .panel-footer {
+	background-color: #EEE;
+}
+
+/* price-box-featured */
+.price-box-featured {
+	z-index: 9;
+}
+.price-box-featured .panel {
+	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.21);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.prices .price-box-featured .price-box-ribbon {
+	position: absolute;
+	width: 150px;
+	top: 25px;
+	right: -35px;
+	text-align: center;
+	padding: 5px 20px;
+	background: #FFF;
+	color: #E83F33;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/* ===== End prices ===== */
+
+
+/* ===== Begin social ===== */
+#social-section {
+	padding: 80px 0;
+}
+ul.social-list {
+	text-align: center;
+	margin: 0 auto;
+}
+ul.social-list li{
+	display: inline-block;
+	margin-right: 20px;
+}
+ul.social-list li .rotate-box-1 {
+	margin: 0;
+}
+ul.social-list li a i {
+	color: #fff;
+	font-size:20px;
+}
+/* ===== End social ===== */
+
+
+/* ===== Begin contact ===== */
+
+#contact-section .form-control,
+#contact-section .form-control::placeholder {
+    color: #fff !important;
+}
+
+#contact-section {
+	position: relative;
+}
+#contact-section h4 {
+	font-weight: 400;
+}
+
+#contact-section .cover {
+    background-color: #1F9AA1; /* 原始颜色 */
+    opacity: 0.5; /* 0-1之间的值 */
+}
+
+#contact-section .contact .contact-form {
+	margin-bottom: 40px;
+	color:#ffffff
+}
+#contact-section .contact .contact-form h4 {
+	margin-bottom: 25px;
+	color:#ffffff
+}
+#contact-section .contact .contact-form .input-lg {
+	font-size: 14px;
+	color:#ffffff
+}
+#contact-section .contact .contact-form button {
+	width: 100%;
+	height: 40px;
+}
+#contact-section .contact .contact-form button:hover {
+	color: #fff;
+}
+#contact-section .contact .form-control {
+	background-color: rgba(92, 235, 195, 0.587);
+	border-color: #ffffff;
+}
+#contact-section .contact .form-control:focus {
+	background-color: #6df8c35b;
+	box-shadow: none;
+}
+
+ul.contact-address {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 15px 0 ;
+}
+ul.contact-address li {
+	padding: 0 0 20px;
+	margin: 0;
+}
+ul.contact-address li:last-child {
+	padding-bottom: 0;
+}
+ul.contact-address li i {
+	margin-right: 10px;
+}
+/* ===== End contact ===== */
+
+
+/* ===== Begin footer ===== */
+.footer-top {
+	padding: 60px 0 35px;
+}
+.footer-top .col-md-4 {
+	margin-bottom: 25px;
+}
+.footer {
+	padding: 30px 0;
+}
+
+.footer p{
+	color: #ffffff;
+}
+
+.footer a{
+	text-decoration: none;
+}
+
+#prices-section {
+    border-bottom: 0; /* 移除下边框 */
+    padding-bottom: 0; /* 同时移除底部内边距 */
+}
+
+/*Widget1: Useful Links*/
+ul.imp-links {
+	margin-top: 15px;
+}
+ul.imp-links li {
+	padding: 5px 0;
+}
+ul.imp-links li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*Widget2: subscribe form*/
+#subscribe #result {
+    display: block;
+    width: 100% !important;
+}
+#footer_signup {
+    margin: 20px 0;
+}
+
+
+/* ===== Begin page header ===== */
+.page-header {
+	margin: 0 0 60px 0;
+	padding: 0;
+	border: none;
+}
+.page-header h2 {
+	text-transform: uppercase;
+	padding-bottom: 0;
+}
+p.subtitle {
+	letter-spacing: 2px;
+	margin-top: 0px;
+	font-size: 20px;
+}
+/* ===== End page header ===== */
+
+
+/* ===== Begin extra-space ===== */
+.extra-space-m {
+	width: 100%;
+	height: 20px;
+}
+.extra-space-l {
+	width: 100%;
+	height: 40px;
+}
+.extra-space-xl {
+	width: 100%;
+	height: 60px;
+}
+.extra-space-xxl {
+	width: 100%;
+	height: 80px;
+}
+/* ===== End more-space ===== */
+
+
+/* ===== Begin OWL carousel ===== */
+.owl-carousel {
+	cursor: e-resize;
+}
+.owl-theme .owl-controls {
+	margin-top: 30px;
+}
+.owl-theme .owl-controls .owl-page span {
+	background: rgba(0, 0, 0, 0);
+	width: 14px;
+	height: 14px;
+	border: 3px solid #fff;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+	background: rgba(0, 0, 0, 0);
+	border: 3px solid #fff;
+}
+.owl-buttons {
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	width: 100%;
+}
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+	text-align: center;
+	background: transparent;
+	opacity: 1;
+}
+.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+	opacity: .5;
+}
+.owl-next {
+	background-image: url(../img/arrow-right.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	right: 0;
+}
+.owl-prev {
+	background-image: url(../img/arrow-left.png) !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	left: 0;
+}
+/* ===== End OWL carousel ===== */
+
+
+/* ===== Begin buttons ===== */
+.btn {
+	position: relative;
+	letter-spacing: 1.5px;
+	border: none;
+}
+.btn:active {
+	top: 2px;
+}
+
+/* Button default */
+.btn-default, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+}
+
+/* Button blank */
+.btn-blank {
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 8px 12px;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+.btn-blank:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #fff;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.btn-blank:hover, .btn-blank:focus, .btn-blank:active {
+	color: #e0ffe3;
+}
+.btn-blank:hover:before, .btn-blank:focus:before, .btn-blank:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+/* Button active */
+.btn:active, .btn.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.16);
+	box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.16);
+}
+
+/* Button large */
+.btn-lg {
+	font-size: 1.3em;
+	padding: 10px 40px;
+}
+.btn-lg-xl {
+	font-size: 1.4em;
+	padding: 10px 80px;
+}
+
+
+/* Scroll to top button */
+
+/* 如果页面长时间未滚动，隐藏按钮 */
+.scrolltotop {
+    display: none;
+}
+
+/* 页面滚动时显示按钮 */
+body.scrollactive .scrolltotop {
+    display: block;
+}
+
+.scrolltotop {
+	position: fixed;
+	display: none;
+	bottom: 20px;
+	right: 30px;
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 9999;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.scrolltotop .fa {
+	padding-left: 4px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+/* ===== End buttons ===== */
+
+.custom-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;          /* 启用弹性布局 */
+    flex-direction: column; /* 垂直排列 */
+    align-items: center;    /* 子元素水平居中 */
+  }
+
+/* 图片容器 */
+  
+  .image-container img {
+	width: 100%;
+	max-width: 800px;  /* 控制图片最大宽度 */
+	height: auto;
+	display: block;
+	margin: 20px auto;  /* 上下留白 */
+	border-radius: 8px;  /* 可选圆角 */
+
+  }
+  
+  .custom-header {
+	text-align: left;
+	margin: 30px 0;
+  }
+  
+  .custom-header h1 {
+	font-size: 2rem;
+	color: #1F9AA1;
+	margin-bottom: 10px;
+  }
+  
+  .custom-header h2 {
+	font-size: 1.3rem;
+	color: #1f9aa1dc;
+	font-weight: 300;
+	margin-bottom: 0px;
+  }
+  
+  .custom-body {
+	text-align: left;
+	line-height: 1;
+	color: #218388;
+	max-width: 800px;
+	margin: 0 auto;
+  }
+  
+  .custom-body p {
+	margin-bottom: 0.2em;
+	font-size: 1rem;
+  }
+
+  /* 响应式适配 */
+@media (max-width: 768px) {
+	.image-wrapper {
+	  max-width: 100%;
+	}
+	
+	.custom-header h1 {
+	  font-size: 2rem;
+	}
+	
+	.custom-header h2 {
+	  font-size: 1.5rem;
+	}
+	
+	.text-content {
+	  padding: 0 10px;
+	}
+  }
